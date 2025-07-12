@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList, NavigationMenuLink } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
 import { ChatBubbleOvalLeftEllipsisIcon } from "@heroicons/react/24/outline"
@@ -7,9 +8,9 @@ import { ChatBubbleOvalLeftEllipsisIcon } from "@heroicons/react/24/outline"
 export default function Header() {
   return (
     <header className="flex items-center justify-between p-5">
-      <a href="/" className="text-xl font-bold">
+      <Link href="/" className="text-xl font-bold">
         Icon
-      </a>
+      </Link>
 
       <NavigationMenu>
         <NavigationMenuList className="gap-6">
@@ -35,9 +36,9 @@ export default function Header() {
       asChild
       className="bg-black text-white hover:bg-gray-800 rounded-full w-10 h-10 flex items-center justify-center"
     >
-      <a href="/contact" aria-label="Chat" className="flex items-center justify-center">
+      <Link href="/contact" aria-label="Chat" className="flex items-center justify-center">
         <ChatBubbleOvalLeftEllipsisIcon style={{ width: 30, height: 30 }} />
-      </a>
+      </Link>
     </Button>
 
     </header>
