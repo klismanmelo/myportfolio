@@ -6,7 +6,7 @@ export default function Principal() {
       
       {/* Texto — à esquerda em telas grandes */}
       <div className="flex-1 space-y-6 order-1">
-        <p className="text-lg text-gray-600">Hey, I'm Klisman! ✌🏽</p>
+        <p className="text-2xl text-gray-600">Hey, I'm Klisman! ✌🏽</p>
 
         <div className="flex flex-col lg:flex-row lg:items-center lg:gap-3">
           <h1 className="text-6xl font-bold">Fullstack</h1>
